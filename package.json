@@ -1,0 +1,24 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CLI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fvaldez421/Hangman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fvaldez421/Hangman/issues"
+  },
+  "homepage": "https://github.com/fvaldez421/Hangman#readme",
+  "dependencies": {
+    "cli-color": "^1.2.0",
+    "inquirer": "^5.1.0",
+    "prompt": "^1.0.0"
+  }
+}
