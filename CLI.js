@@ -1,6 +1,24 @@
 var inquirer = require("inquirer");
-// var prompt = require("prompt");
-var clc = require("cli-color");
 var game = require("./game.js");
 
-game.gameInit();
+function gameInit() {
+	console.log("\nWelcome to Hangman!\n");
+
+	inquirer.prompt([
+		{
+			type: "list",
+			name: "command",
+			message: "Choose an option:",
+			choices: ["Start game", "Exit"]
+		},
+	]).then(function(input) {
+			var command = input.command;
+			if (command === "Start game") {
+				game.start();
+			}else {
+				game.exit();
+			};
+		});
+};
+
+gameInit();
