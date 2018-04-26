@@ -1,7 +1,7 @@
 
 
 module.exports = {
-// ________ Makes a blank array with new word _________
+// Makes a blank array with new word
 	makeWord: function(word) {
 		let cWordArr = word.split("");
 		let bWordArr = [];
@@ -16,8 +16,9 @@ module.exports = {
 		}
 		return bWord;
 	},
-// _________ Checks letter against current verion of gameWord, 
-// returns boolean ___________
+
+// Checks given letter against current verion of gameWord, 
+// returns boolean 
 	checkWord: function(gameWord, letter) {
 		if (gameWord.includes(letter)){
 			return true;
@@ -25,9 +26,9 @@ module.exports = {
 			return false;
 		}
 	},
-// Removes guessed letter from gameWord, 
-// replaces blank space in blankWord,
-// formats words for next cycle
+
+// Removes guessed letter from gameWord, replaces blank space in blankWord,
+// then formats words for next cycle
 	updateWords: function(gWordArr, bWordArr, letter) {
 		while (gWordArr.includes(letter)) {
 			let i = gWordArr.indexOf(letter);
@@ -48,6 +49,7 @@ module.exports = {
 		}
 		return [gWord, bWord];
 	},
+	
 // Checks if letter has been recorded in wordBank before
 // Returns boolean
 	checkBank: function(bank, letter) {

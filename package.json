@@ -18,7 +18,6 @@
   "homepage": "https://github.com/fvaldez421/Hangman#readme",
   "dependencies": {
     "cli-color": "^1.2.0",
-    "inquirer": "^5.1.0",
-    "prompt": "^1.0.0"
+    "inquirer": "^5.1.0"
   }
 }
