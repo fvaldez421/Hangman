@@ -7,3 +7,10 @@
 	<li>Inquirer</li>
 	<li>Cli-Color</li>
 </ul>
+
+<h4>To Run</h4>
+<ol>
+	<li>Open Command line and navigate to a desire directory and clone repository down to your machine.</li>
+	<li>Navigate inside directory and run "npm install" to download and install all the depedencies.</li>
+	<li>Once this is complete, you may run "node CLI.js" or "nodemon" if you have it installed.</li>
+</ol>
