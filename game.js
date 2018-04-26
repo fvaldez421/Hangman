@@ -2,6 +2,7 @@ let inquirer = require("inquirer");
 let clc = require("cli-color");
 let wordTools = require("./Words.js");
 let wordMaker = require("./wordBank.js");
+let original = "";
 let lives = 10;
 let letterBank = [];
 
@@ -14,6 +15,7 @@ function start() {
 
 	//Reassigns newWord to a fresh random word that is returned by wordMaker.New()
 	newWord = wordMaker.New();
+	original = newWord;
 
 	//Pushes newWord into the makeWord() function inside wordTools to return a string of blanks
 	blankWord = wordTools.makeWord(newWord);
@@ -100,7 +102,7 @@ function playGame(gameWord, blankWord) {
 					//update if lives reach 0, game is over
 					if (lives === 0) {
 						console.log("Loser!");
-						console.log("The word was: " + bWord + "\n");
+						console.log("The word was: " + original + "\n");
 						gameEnd();
 					}else {
 						playGame(gameWord, blankWord);
@@ -140,6 +142,7 @@ function gameEnd() {
 			//If yes, resets lives and letterBank, calls on start function all over again.
 			if (input.answer === "Yes") {
 
+				original = "";
 				lives = 10;
 				letterBank = [];
 				start();
@@ -148,8 +151,6 @@ function gameEnd() {
 			}
 		});	
 }
-
-
 
 //Ends game with a final console log.
 function exit() {

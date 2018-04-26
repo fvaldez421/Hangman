@@ -1,6 +1,16 @@
 <h2>Hangman</h2>
 
-<p>This is a command line game built using Node.js. It is buit in such a way that displays the use of object oriented programming in order to access multiple space consuming functions in a more organized, simpler format.</p>
+<p>
+	This is a one-player command-line version of Hangman. It randomly chooses one technology based word from a word bank and prompts the user for guesses.
+</p>
+<p>
+	This game is built using Node.js. It is buit in such a way that displays the use of object oriented programming in order to access multiple space consuming functions in a more organized, simpler format.
+</p>
+
+<h4>Snapshots</h4>
+<img src="./imgs/start.JPG">
+<img src="./imgs/gamePlay.JPG">
+<img src="./imgs/gameEnd.JPG">
 
 <h4>Dependencies</h4>
 <ul>
