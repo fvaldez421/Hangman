@@ -1,9 +1,7 @@
 var inquirer = require("inquirer");
 var game = require("./game.js");
 
-
 //Initializes game upon startup
-
 function gameInit() {
 	console.log("\nWelcome to Hangman!\n");
 
